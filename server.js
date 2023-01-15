@@ -19,9 +19,11 @@ connectDB()
 app.set("view engine", "ejs")
 app.set(express.static("public"))
 app.use(express.urlencoded({extended: true}))
+app.use(express.json())
 
 //todo - Set Routes
 app.use('/',homeRoutes)
+app.use('/edit', editRoutes)
 
 //todo - Start Server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
