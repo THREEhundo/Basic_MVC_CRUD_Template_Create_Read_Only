@@ -1,0 +1,13 @@
+body {
+    font-family: 'JetBrains Mono';
+}
+
+body,
+input,
+button {
+    font-size: 36px;
+}
+
+li {
+    list-style: none;
+}
