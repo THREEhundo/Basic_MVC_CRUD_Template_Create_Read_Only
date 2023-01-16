@@ -16,7 +16,7 @@
                 <% itemList.forEach(item => { %>
                 <% if (item._id == idItem) { %>
                 <li>
-                    <form action="/edit/update/<%= item._id%>" method="POST">
+                    <form action="/edit/update/<%= item._id %>" method="POST">
                         <label for="textinput">Input Text</label>
                         <input type="text" name="textinput" value="<%= item.textinput %>">
                         <label for="numinput">Input Number</label>
